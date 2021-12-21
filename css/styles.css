@@ -1,0 +1,351 @@
+:root {
+  --theme-color: #2196f3;
+  --primary-color: #e5e5e5;
+  --secondary-color: #2f303a;
+  --another-color: #f5f4fa;
+  --primary-white-color: #ffffff;
+
+  --text-primary: #212121;
+  --text-secondary: #757575;
+
+  --primary-font: "Roboto";
+  --secondary-font: "Raleway";
+}
+
+body {
+  font-family: var(--primary-font), sans-serif;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.section.no-padding {
+  padding-bottom: 0;
+}
+
+/*Общие*/
+img {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.location .geolocation {
+  font-style: normal;
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+.caption {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+/*Стили для Студии*/
+/*header*/
+.header {
+  background-color: var(--primary-white-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+}
+.logo {
+  color: var(--text-primary);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo span,
+.logo-secondary span {
+  color: var(--theme-color);
+  font-family: var(--secondary-font);
+}
+.logo-secondary {
+  display: inline-block;
+  color: var(--primary-white-color);
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-bottom: 20px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+}
+/*Main nav*/
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+/*Site nav*/
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .list:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link {
+  display: block;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav .link.current {
+  color: var(--theme-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--theme-color);
+}
+/*Auth nav*/
+.auth-nav {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: auto;
+}
+
+.auth-nav .list + .list {
+  margin-left: 50px;
+}
+.auth-nav .link {
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--theme-color);
+}
+
+/*Hero*/
+.hero {
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+.hero-title {
+  margin-bottom: 30px;
+  margin-top: 0;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+.hero-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 136px;
+
+  font-family: var(--primary-font);
+  color: var(--primary-white-color);
+  background-color: var(--theme-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+}
+/*Feature*/
+.feature {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  margin-top: 0%;
+}
+.feature-text {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.71;
+  width: 270px;
+}
+
+/*Work*/
+.work {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Team*/
+.liders {
+  display: flex;
+  justify-content: space-between;
+}
+.team-liders {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.item {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.item-text {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.18;
+}
+/** FOOTER**/
+
+.footer {
+  background-color: var(--secondary-color);
+  font-family: var(--primary-font), sans-serif;
+  font-style: normal;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  list-style-type: none;
+}
+.container a {
+  display: block;
+}
+.mail a,
+.tel a {
+  font-family: var(--primary-font);
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--theme-color);
+}
+
+.address .link {
+  margin-bottom: 9px;
+}
+.tel .link {
+  margin-bottom: 0;
+}
+
+/*Стили для Портфолио*/
+.buttons {
+  margin-bottom: 56px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button-nav {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+
+  font-family: var(--primary-font);
+  color: var(--text-primary);
+  background-color: var(--another-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+}
+.buttons .list:not(:last-child) {
+  margin-right: 8px;
+}
+.button-nav:hover,
+.button-nav:focus {
+  color: var(--primary-white-color);
+  background-color: var(--theme-color);
+}
+/*Content*/
+.description {
+  padding: 20px 24px;
+
+  border: 1px solid #eeeeee;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .item {
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.content .item:nth-child(3n + 3) {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.content-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.content-text {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.87;
+}
