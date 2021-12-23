@@ -172,6 +172,8 @@ a {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
+  background-color: var(--secondary-color);
+  background-image: url(../images/br-opt.jpg);
 }
 .hero-title {
   margin-bottom: 30px;
@@ -212,6 +214,29 @@ a {
   margin-bottom: 10px;
   margin-top: 0%;
 }
+
+.feature-list::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: var(--another-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.feature-list.icon-details::before {
+  background-image: url(../images/Group.svg);
+}
+.feature-list.icon-punctuality::before {
+  background-image: url(../images/clock\ 1.svg);
+}
+.feature-list.icon-planning::before {
+  background-image: url(../images/diagram\ 1.svg);
+}
+.feature-list.icon-technology::before {
+  background-image: url(../images/astronaut\ 1-2.svg);
+}
 .feature-text {
   color: var(--text-secondary);
   font-size: 14px;
@@ -250,8 +275,10 @@ a {
   line-height: 1.18;
 }
 /** FOOTER**/
-
-.footer {
+.container.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
   background-color: var(--secondary-color);
   font-family: var(--primary-font), sans-serif;
   font-style: normal;
@@ -259,9 +286,10 @@ a {
   padding-bottom: 60px;
   list-style-type: none;
 }
-.container a {
-  display: block;
+.exhortation {
+  margin-left: 70px;
 }
+
 .mail a,
 .tel a {
   font-family: var(--primary-font);
