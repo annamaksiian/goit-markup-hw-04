@@ -166,7 +166,23 @@ a {
 .auth-nav .link:focus {
   color: var(--theme-color);
 }
-
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  fill: #757575;
+}
+.icon-mail {
+  fill: currentColor;
+}
+.icon-mail:hover,
+.icon-mail:focus {
+  fill: #2196f3;
+}
 /*Hero*/
 .hero {
   text-align: center;
@@ -251,16 +267,22 @@ a {
 }
 
 /*Team*/
+.section.team {
+  background-color: var(--another-color);
+}
 .liders {
   display: flex;
   justify-content: space-between;
 }
 .team-liders {
+  background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
-
+.team-icon {
+}
 .item {
   color: var(--text-primary);
   font-weight: 500;
@@ -275,23 +297,59 @@ a {
   line-height: 1.18;
 }
 /** FOOTER**/
-.container.footer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+.footer {
   background-color: var(--secondary-color);
-  font-family: var(--primary-font), sans-serif;
-  font-style: normal;
   padding-top: 60px;
   padding-bottom: 60px;
-  list-style-type: none;
 }
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .exhortation {
   margin-left: 70px;
 }
+.exhortation-item {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.mail a,
-.tel a {
+.networks-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.networks-icon:hover,
+.networks-icon:focus {
+  background-color: var(--theme-color);
+}
+.join-item:not(:last-child):not(:last-child) {
+  margin-right: 10px;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-link {
   font-family: var(--primary-font);
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
@@ -306,9 +364,6 @@ a {
   color: var(--theme-color);
 }
 
-.address .link {
-  margin-bottom: 9px;
-}
 .tel .link {
   margin-bottom: 0;
 }
