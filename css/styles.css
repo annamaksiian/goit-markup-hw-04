@@ -166,21 +166,29 @@ a {
 .auth-nav .link:focus {
   color: var(--theme-color);
 }
-.navigation {
+.list.navigation {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.nav-icon {
-  cursor: pointer;
-  margin-right: 10px;
   fill: #757575;
 }
-.icon-mail {
-  fill: currentColor;
+.nav-icon {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
 }
+.icon-mail,
+.icon-tel {
+  fill: #757575;
+}
+
 .icon-mail:hover,
 .icon-mail:focus {
+  fill: #2196f3;
+}
+.icon-tel :hover,
+.icon-tel:focus {
   fill: #2196f3;
 }
 /*Hero*/
@@ -281,8 +289,7 @@ a {
   padding-bottom: 30px;
   text-align: center;
 }
-.team-icon {
-}
+
 .item {
   color: var(--text-primary);
   font-weight: 500;
@@ -295,6 +302,41 @@ a {
   color: var(--text-secondary);
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 16px;
+}
+/* Клиенты */
+
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-item {
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--text-secondary);
+}
+.icon-cl {
+  fill: rgba(175, 177, 184, 1);
+}
+.icon-cl:hover,
+.icon-cl:focus {
+  fill: var(--theme-color);
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+  border: 1px solid rgba(175, 177, 184, 1);
 }
 /** FOOTER**/
 .footer {
@@ -343,7 +385,14 @@ a {
 .networks-icon:focus {
   background-color: var(--theme-color);
 }
-.join-item:not(:last-child):not(:last-child) {
+.icon {
+  fill: rgba(175, 177, 184, 1);
+}
+.icon:hover,
+.icon:focus {
+  fill: var(--primary-white-color);
+}
+.join-item:not(:last-child) {
   margin-right: 10px;
 }
 .address-item:not(:last-child) {
