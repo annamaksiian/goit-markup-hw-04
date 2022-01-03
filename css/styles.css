@@ -475,11 +475,14 @@ a {
   display: block;
   margin-right: 30px;
   margin-bottom: 30px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .content .item:nth-child(3n + 3) {
   margin-right: 0;
+}
+.content .item:hover,
+.content .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .content-title {
   color: var(--text-primary);
