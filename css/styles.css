@@ -155,6 +155,15 @@ a {
 .auth-nav .list + .list {
   margin-left: 50px;
 }
+.auth-nav .nav-icon:hover,
+.auth-nav .nav-icon:focus {
+  color: var(--theme-color);
+  fill: var(--theme-color);
+}
+.auth-nav .icon-mail,
+.auth-nav .icon-tel {
+  margin-right: 10px;
+}
 .auth-nav .link {
   color: var(--text-secondary);
   font-weight: 500;
@@ -172,16 +181,22 @@ a {
   align-items: center;
   fill: #757575;
 }
+.list.navigation .link:hover,
+.list.navigation .link:focus {
+  color: #2196f3;
+}
 .nav-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   margin-right: 10px;
+  color: var(--text-secondary);
 }
 .icon-mail,
 .icon-tel {
-  fill: #757575;
+  fill: currentColor;
+  width: 100%;
 }
 
 .nav-icon:hover .icon-mail,
@@ -197,9 +212,18 @@ a {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
-  background-color: var(--secondary-color);
-  background-image: url(../images/br-opt.jpg);
+  background-size: cover;
+  background-position: center;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/br-opt.jpg);
+  background-repeat: no-repeat;
 }
+
 .hero-title {
   margin-bottom: 30px;
   margin-top: 0;
@@ -319,8 +343,8 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border: 1px solid rgba(175, 177, 184, 1);
-  color: var(--text-secondary);
+  border: 1px solid #afb1b8;
+  color: #afb1b8;
   width: 100%;
   height: 100%;
 }
